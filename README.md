@@ -1,4 +1,6 @@
-# TradeOgre Python API Wrapper
+# TradeOgre Python Grid Bot
+
+API inherited/modified from: https://github.com/Endogen/TradeOgrePy
 
 ## Preconditions
 In order to use this API wrapper you need to have API keys from [TradeOgre](https://tradeogre.com).
@@ -8,25 +10,26 @@ Open `Account` --> `Settings` --> `API Keys`
 ## Load API keys
 
 __From file__
+save file as tradeogre.py
 ```python
-from tradeogre import TradeOgre
+import tradeogre
 
-trade_ogre = TradeOgre().load_key('TradeOgre.key')
+trade_ogre = tradeogre.TradeOgre().load_key('TradeOgre.key')
 ```
 In this case the key must be on the first line and the secret must be on the second line
 
 __As direct input in class__
 ```python
-from tradeogre import TradeOgre
+import tradeogre
 
-trade_ogre = TradeOgre(key=some_key, secret=some_secret)
+trade_ogre = tradeogre.TradeOgre(key=some_key, secret=some_secret)
 ```
 
 __As direct input in method__
 ```python
-from tradeogre import TradeOgre
+import tradeogre
 
-trade_ogre = TradeOgre()
+trade_ogre = tradeogre.TradeOgre()
 reply = trade_ogre.balances(key=some_key, secret=some_secret)
 ```
 
