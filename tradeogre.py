@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 
 
@@ -29,7 +30,8 @@ class TradeOgre(object):
         self.uri = 'https://tradeogre.com/api/v1'
         self.response = None
         return
-
+        
+    
     def load_key(self, path):
         """ Load key and secret from file.
         Expected file format is key and secret on separate lines.
@@ -40,6 +42,8 @@ class TradeOgre(object):
         :returns: None
 
         """
+        #print(path)#debug
+        
         with open(path, 'r') as f:
             self.key = f.readline().strip()
             self.secret = f.readline().strip()
