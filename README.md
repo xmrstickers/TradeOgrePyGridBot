@@ -7,6 +7,9 @@ API inherited/modified from: https://github.com/Endogen/TradeOgrePy
  starts at the lower bound 100% weighted in the currency pair -- does not force rebalance like kucoin and others
  in other words, for example, the bot starts as 100% sell on XMR given BTC-XMR as the input pair and only requires XMR to start. AKA "bullish bias" 
  
+ ensure all python files are in the same directory, and your tradeogre API key is defined in run.py (see: api_file_uri variable) and execute run.py after changing settings to produce desired output. 
+ YOU NEED TO CHANGE ALL OF THE SETTINGS - THIS BOT WILL LET YOU BE AN IDIOT - IT IS NOT A RISK-FREE MONEY MACHINE - UNDERSTAND THE CODE BEFORE RUNNING. 
+ 
  TODO: write actual documentation 
 
 
