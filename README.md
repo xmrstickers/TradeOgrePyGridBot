@@ -2,6 +2,14 @@
 
 API inherited/modified from: https://github.com/Endogen/TradeOgrePy
 
+ market-making bot:
+ 
+ starts at the lower bound 100% weighted in the currency pair -- does not force rebalance like kucoin and others
+ in other words, for example, the bot starts as 100% sell on XMR given BTC-XMR as the input pair and only requires XMR to start. AKA "bullish bias" 
+ 
+ TODO: write actual documentation 
+
+
 ## Preconditions
 In order to use this API wrapper you need to have API keys from [TradeOgre](https://tradeogre.com).
 
